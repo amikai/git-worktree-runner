@@ -84,6 +84,23 @@ git gtr list
 git gtr rm my-feature
 ```
 
+### Zim (Zsh) install
+
+Add gtr as a Zim module to get the binary on PATH and completions automatically:
+
+```zsh
+# ~/.zimrc
+zmodule coderabbitai/git-worktree-runner
+```
+
+Then apply changes:
+
+```bash
+zimfw install   # or: zimfw update
+```
+
+Restart the shell and `git gtr` should be available with completions.
+
 ## Why gtr?
 
 While `git worktree` is powerful, it's verbose and manual. `git gtr` adds quality-of-life features for modern development:
